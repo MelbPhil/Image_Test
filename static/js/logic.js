@@ -36,7 +36,7 @@ var map = new mapboxgl.Map({
 map.on('load', () => {
     // Load an image from an external URL.
     map.loadImage(
-        'file:///Users/melphillips/Desktop/dg.png',
+        'https://raw.githubusercontent.com/MelbPhil/Image_Test/main/static/data/dg.png',
         (error, image) => {
             if (error) throw error;
 
