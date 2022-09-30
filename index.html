@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title></title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://npmcdn.com/csv2geojson@latest/csv2geojson.js'></script>
+  <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+
+  <!-- d3 JavaScript -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- Link to CSS stylesheet -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+
+  <div id='map'></div>
+  <div class="map-overlay top">
+    <div class="map-overlay-inner">
+      <div id="legend" class="legend">
+        <div>Units (unit)</div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    <div class="map-overlay-inner">
+      <h2>Time slider</h2>
+      <label id="month"></label>
+      <input id="slider" type="range" min="0" max="11" step="1" value="0">
+    </div>
+  </div>
+
+  <!-- Link to Keys -->
+  <script type="text/javascript" src="static/js/config.js"></script>
+  <script type="text/javascript" src="static/js/logic.js"></script>
+
+</body>
+
+</html>
